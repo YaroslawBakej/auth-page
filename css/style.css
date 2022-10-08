@@ -1,0 +1,132 @@
+* {
+  font-family: "Poppins";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .left-block {
+  width: 50%;
+  background-color: rgb(226, 240, 255);
+}
+main .left-block .img {
+  background-image: url(../img/1.svg);
+  background-size: contain;
+  width: 525px;
+  height: 400px;
+  margin: 180px auto 55px auto;
+  background-repeat: no-repeat;
+}
+main .left-block .content {
+  width: 400px;
+  margin: auto auto 250px auto;
+}
+main .left-block .content h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #292731;
+  margin-bottom: 23px;
+}
+main .left-block .content p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #455360;
+}
+main .right-block {
+  width: 50%;
+  background-color: #F5F5F5;
+}
+main .right-block .login-block {
+  width: 440px;
+  margin: 166px auto auto auto;
+}
+main .right-block .login-block .header {
+  height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 62px;
+}
+main .right-block .login-block .header .smile {
+  background-image: url(../img/waving-hand.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+main .right-block .login-block .header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+main .right-block .login-block .header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292731;
+}
+main .right-block .login-block .form {
+  position: relative;
+}
+main .right-block .login-block .form h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #455360;
+  margin-bottom: 10px;
+}
+main .right-block .login-block .form input {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 0 9px 22px;
+  margin-bottom: 30px;
+  width: 440px;
+  background: #ECF2F7;
+  border-radius: 5px;
+  border: none;
+}
+main .right-block .login-block .form .sign,
+main .right-block .login-block .form .login {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 440px;
+  background: #4C70FF;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+main .right-block .login-block .form .btn-login:hover,
+main .right-block .login-block .form .btn-sign:hover {
+  background: #2e56f6;
+}
+main .right-block .login-block .form .sign {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+main .right-block .login-block .form .sign a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #67bce8;
+  text-decoration: none;
+  margin-left: 15px;
+}
