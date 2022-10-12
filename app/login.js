@@ -1,12 +1,17 @@
-let login=document.querySelector(".login")
+let login = document.querySelector(".login")
 
-login.addEventListener("click",()=>{
-    let mail=document.querySelector(".mail-or-phone")
-    let pwd=document.querySelector(".pwd")
+function checkLogin(mail, pwd) {
+    const mail = document.querySelector(".mail-or-phone")
+    const pwd = document.querySelector(".pwd")
+    if (/^[\w\d]+@[\w]+.[\w]{1,4}$/g.test(mail).value) throw new Error("wrong mail or phone number")
+    if (pwd.value.length < 8) throw new Error("short password")
+    return true
+}
+
+login.addEventListener("click", () => {
     try {
-        if(/^[a-zA-Z0-9_]+@[a-zA-Z]+.[a-zA-Z]{1,4}/g.test(mail).value) throw new Error("wrong mail or phone number")
-        if(pwd.value.length<8) throw new Error("short password")
-        alert("Вы успешно авторизованы в системе")
+        if (checkLogin(mail, pwd))
+            alert("Вы успешно авторизованы в системе")
     } catch (error) {
         alert(error.message)
     }
